@@ -28,10 +28,11 @@ if [ "$1" = "$FDEVICE" -o "$FOX_BUILD_DEVICE" = "$FDEVICE" ]; then
     export OF_DONT_PATCH_ON_FRESH_INSTALLATION=1
     export OF_NO_RELOAD_AFTER_DECRYPTION=1
     export FOX_DISABLE_APP_MANAGER=1
-    export OF_MAINTAINER=Edward0181
-    export FOX_VERSION=R11.1_2.3
-    export FOX_BUILD_TYPE="Test"
-    export FOX_VARIANT=A12
+    export OF_MAINTAINER=Kelvin
+    export FOX_VERSION=R13
+	export FOX_R13=1
+    export FOX_BUILD_TYPE="Stable"
+    export FOX_VARIANT=A14
     export OF_SCREEN_H=2400
     export OF_STATUS_H=122
     export OF_STATUS_INDENT_LEFT=80
@@ -70,6 +71,10 @@ if [ "$1" = "$FDEVICE" -o "$FOX_BUILD_DEVICE" = "$FDEVICE" ]; then
     export OF_FIX_DECRYPTION_ON_DATA_MEDIA=1
     export OF_UNBIND_SDCARD_F2FS=1
 
+	# enable flashlight 
+	export OF_FLASHLIGHT_ENABLE=1
+    export OF_FL_PATH="/sys/devices/virtual/camera/flash/rear_flash"
+	
 	# Let's see which are our build vars
     if [ -n "$FOX_BUILD_LOG_FILE" -a -f "$FOX_BUILD_LOG_FILE" ]; then
         export | grep "FOX" >> $FOX_BUILD_LOG_FILE
