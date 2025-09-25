@@ -131,7 +131,7 @@ TARGET_USES_MKE2FS := true
 
 # TWRP specific build flags
 TW_THEME := portrait_hdpi
-TW_DEVICE_VERSION := Edward0181-stable
+TW_DEVICE_VERSION := Nino_a23_5g
 #TW_SCREEN_BLANK_ON_BOOT := true
 # TW_NO_SCREEN_TIMEOUT := true
 TARGET_RECOVERY_QCOM_RTC_FIX := true
