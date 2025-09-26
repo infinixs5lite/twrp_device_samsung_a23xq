@@ -159,19 +159,21 @@ SHRP_EXTERNAL := /external_sd
 SHRP_INTERNAL := /sdcard
 SHRP_OTG := /usbotg
 SHRP_REC := /dev/block/bootdevice/by-name/recovery
-SHRP_REC_TYPE := SAR
-SHRP_DEVICE_TYPE := A/B
-SHRP_FLASH := 1
 SHRP_EXPRESS := true
 SHRP_DEV_USE_HEX := true
 SHRP_OFFICIAL := true
+LZMA_RAMDISK_TARGETS := recovery
+LZMA_COMPRESSION := -9
 SHRP_DARK := true
 SHRP_NO_SAR_AUTOMOUNT := true
-SHRP_AB := true
-
-# Custom led paths for flashlight
+SHRP_AB := false
+SHRP_REC_TYPE := normal
+SHRP_DEVICE_TYPE := A_Only
+SHRP_FLASH := 1
 SHRP_CUSTOM_FLASHLIGHT := true
 SHRP_FONP_1 := /sys/devices/virtual/camera/flash/rear_flash
+SHRP_FONP_2 := 
+SHRP_FONP_3 := 
 SHRP_FLASH_MAX_BRIGHTNESS := 306
 
 # TWRP Configuration: Logd
