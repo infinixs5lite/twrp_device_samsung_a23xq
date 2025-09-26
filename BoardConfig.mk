@@ -150,6 +150,25 @@ TW_EXCLUDE_DEFAULT_USB_INIT := true
 TW_INCLUDE_CRYPTO := true
 TW_INCLUDE_NTFS_3G := true
 
+#SHRP_Variables
+SHRP_PATH := device/samsung/a23xq
+SHRP_MAINTAINER := Kelvin
+SHRP_DEVICE_CODE := a23xq
+SHRP_EDL_MODE := 1
+SHRP_EXTERNAL := /external_sd
+SHRP_INTERNAL := /sdcard
+SHRP_OTG := /usbotg
+SHRP_REC := /dev/block/bootdevice/by-name/recovery
+SHRP_REC_TYPE := SAR
+SHRP_DEVICE_TYPE := A/B
+SHRP_FLASH := 1
+SHRP_EXPRESS := true
+SHRP_DEV_USE_HEX := true
+SHRP_OFFICIAL := true
+SHRP_DARK := true
+SHRP_NO_SAR_AUTOMOUNT := true
+SHRP_AB := true
+
 # TWRP Configuration: Logd
 TWRP_EVENT_LOGGING := true
 TWRP_INCLUDE_LOGCAT := true
