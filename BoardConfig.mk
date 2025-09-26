@@ -171,7 +171,7 @@ SHRP_AB := true
 
 # Custom led paths for flashlight
 SHRP_CUSTOM_FLASHLIGHT := true
-SHRP_FONP := /sys/devices/virtual/camera/flash/rear_flash
+SHRP_FONP_1 := /sys/devices/virtual/camera/flash/rear_flash
 SHRP_FLASH_MAX_BRIGHTNESS := 306
 
 # TWRP Configuration: Logd
