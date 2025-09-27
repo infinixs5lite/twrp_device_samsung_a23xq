@@ -69,9 +69,7 @@ if [ "$1" = "$FDEVICE" -o "$FOX_BUILD_DEVICE" = "$FDEVICE" ]; then
     export OF_SKIP_DECRYPTED_ADOPTED_STORAGE=1
     export OF_FIX_DECRYPTION_ON_DATA_MEDIA=1
     export OF_UNBIND_SDCARD_F2FS=1
-
-	# enable flashlight 
-	export OF_FLASHLIGHT_ENABLE=1
+    export OF_FLASHLIGHT_ENABLE=1
     export OF_FL_PATH="/sys/devices/virtual/camera/flash/rear_flash"
 	
 	# Let's see which are our build vars
