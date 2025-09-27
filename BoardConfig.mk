@@ -175,6 +175,7 @@ SHRP_FONP_1 := /sys/devices/virtual/camera/flash/rear_flash
 SHRP_FONP_2 := 
 SHRP_FONP_3 := 
 SHRP_FLASH_MAX_BRIGHTNESS := 306
+SHRP_ALT_REBOOT := true
 
 # TWRP Configuration: Logd
 TWRP_EVENT_LOGGING := true
