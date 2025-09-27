@@ -28,11 +28,10 @@ if [ "$1" = "$FDEVICE" -o "$FOX_BUILD_DEVICE" = "$FDEVICE" ]; then
     export OF_DONT_PATCH_ON_FRESH_INSTALLATION=1
     export OF_NO_RELOAD_AFTER_DECRYPTION=1
     export FOX_DISABLE_APP_MANAGER=1
-    export OF_MAINTAINER=Kelvin
-	export FOX_R13=1
-    export FOX_BUILD_TYPE="Stable"
-    export FOX_VARIANT=13
-	export FOX_MAINTAINER_PATCH_VERSION=13
+    export FOX_MAINTAINER=Nino_a23xq
+    export FOX_VERSION=R11.1_2.3
+    export FOX_BUILD_TYPE="Test"
+    export FOX_VARIANT=A12
     export OF_SCREEN_H=2400
     export OF_STATUS_H=122
     export OF_STATUS_INDENT_LEFT=80
@@ -56,7 +55,7 @@ if [ "$1" = "$FDEVICE" -o "$FOX_BUILD_DEVICE" = "$FDEVICE" ]; then
     export FOX_TARGET_DEVICES=a23xq
     export OF_USE_GREEN_LED=0
     export FOX_DELETE_AROMAFM=1
-    export OF_QUICK_BACKUP_LIST="/boot;/dtbo;"
+    export OF_QUICK_BACKUP_LIST="/boot;/data;vendor_boot;super;dtbo,recovery"
     export OF_FORCE_PREBUILT_KERNEL=1
     export FOX_REPLACE_BUSYBOX_PS=0
     export FOX_USE_BASH_SHELL=1
