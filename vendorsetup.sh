@@ -29,9 +29,9 @@ if [ "$1" = "$FDEVICE" -o "$FOX_BUILD_DEVICE" = "$FDEVICE" ]; then
     export OF_NO_RELOAD_AFTER_DECRYPTION=1
     export FOX_DISABLE_APP_MANAGER=1
     export FOX_MAINTAINER=Nino_a23xq
-    export FOX_VERSION=R11.1_2.3
     export FOX_BUILD_TYPE="Test"
     export FOX_VARIANT=A12
+	export FOX_MAINTAINER_PATCH_VERSION=12
     export OF_SCREEN_H=2400
     export OF_STATUS_H=122
     export OF_STATUS_INDENT_LEFT=80
