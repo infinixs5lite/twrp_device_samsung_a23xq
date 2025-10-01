@@ -136,8 +136,8 @@ TW_THEME := portrait_hdpi
 TARGET_RECOVERY_QCOM_RTC_FIX := true
 TARGET_RECOVERY_PIXEL_FORMAT := RGBX_8888
 TW_BRIGHTNESS_PATH := "/sys/class/backlight/panel0-backlight/brightness"
-TW_MAX_BRIGHTNESS := 306
-TW_DEFAULT_BRIGHTNESS := 255
+TW_MAX_BRIGHTNESS := 25500
+TW_DEFAULT_BRIGHTNESS := 12800
 TARGET_USE_CUSTOM_LUN_FILE_PATH := /config/usb_gadget/g1/functions/mass_storage.0/lun.%d/file
 TW_CUSTOM_CPU_TEMP_PATH := "/sys/devices/virtual/thermal/thermal_zone50/temp"
 TW_Y_OFFSET := 80
@@ -150,7 +150,7 @@ TW_EXCLUDE_DEFAULT_USB_INIT := true
 TW_INCLUDE_CRYPTO := true
 TW_INCLUDE_NTFS_3G := true
 
-#SHRP_Variables
+# SHRP flags
 SHRP_PATH := device/samsung/a23xq
 SHRP_MAINTAINER := Kelvin
 SHRP_DEVICE_CODE := a23xq
@@ -174,8 +174,8 @@ SHRP_FLASH := 1
 SHRP_CUSTOM_FLASHLIGHT := true
 SHRP_FONP_1 := /sys/devices/virtual/camera/flash/rear_flash
 SHRP_FONP_2 := 
-SHRP_FONP_3 := 
-SHRP_FLASH_MAX_BRIGHTNESS := 306
+SHRP_FONP_3 :=
+SHRP_FLASH_MAX_BRIGHTNESS := 1
 SHRP_ALT_REBOOT := true
 
 # TWRP Configuration: Logd
