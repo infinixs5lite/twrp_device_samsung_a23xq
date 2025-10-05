@@ -31,7 +31,7 @@ if [ "$1" = "$FDEVICE" -o "$FOX_BUILD_DEVICE" = "$FDEVICE" ]; then
     export FOX_MAINTAINER=Nino_a23xq
     export FOX_BUILD_TYPE="Test"
     export FOX_VARIANT=A12
-	export OF_AB_DEVICE=0
+export OF_AB_DEVICE=0
 	export FOX_MAINTAINER_PATCH_VERSION=12
     export OF_SCREEN_H=2400
     export OF_STATUS_H=122
