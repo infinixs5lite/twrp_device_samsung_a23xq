@@ -31,6 +31,7 @@ if [ "$1" = "$FDEVICE" -o "$FOX_BUILD_DEVICE" = "$FDEVICE" ]; then
     export FOX_MAINTAINER=Nino_a23xq
     export FOX_BUILD_TYPE="Test"
     export FOX_VARIANT=A12
+	export OF_AB_DEVICE=0
 	export FOX_MAINTAINER_PATCH_VERSION=12
     export OF_SCREEN_H=2400
     export OF_STATUS_H=122
@@ -55,7 +56,7 @@ if [ "$1" = "$FDEVICE" -o "$FOX_BUILD_DEVICE" = "$FDEVICE" ]; then
     export FOX_TARGET_DEVICES=a23xq
     export OF_USE_GREEN_LED=0
     export FOX_DELETE_AROMAFM=1
-    export OF_QUICK_BACKUP_LIST="/boot;/data;vendor_boot;super;dtbo,recovery"
+    export OF_QUICK_BACKUP_LIST="/boot;/data;"
     export OF_FORCE_PREBUILT_KERNEL=1
     export FOX_REPLACE_BUSYBOX_PS=0
     export FOX_USE_BASH_SHELL=1
@@ -65,7 +66,7 @@ if [ "$1" = "$FDEVICE" -o "$FOX_BUILD_DEVICE" = "$FDEVICE" ]; then
     export FOX_USE_XZ_UTILS=1
     export FOX_USE_SED_BINARY=1
     export OF_ENABLE_LPTOOLS=1
-    export OF_KEEP_DM_VERITY_FORCED_ENCRYPTION=1
+	export ALLOW_MISSING_DEPENDENCIES=true    export OF_KEEP_DM_VERITY_FORCED_ENCRYPTION=1
     export OF_SKIP_DECRYPTED_ADOPTED_STORAGE=1
     export OF_FIX_DECRYPTION_ON_DATA_MEDIA=1
     export OF_UNBIND_SDCARD_F2FS=1
